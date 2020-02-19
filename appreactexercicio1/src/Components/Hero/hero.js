@@ -1,10 +1,12 @@
 import React from 'react';
 import './hero.css';
 
-function Hero() {
-    return(
-        <div>
-            
-        </div>
-    )
+class Hero extends React.Component {
+    render() {
+        return (
+            <div>
+                {/* Caption text component */}
+            </div>
+        )
+    }
 }
