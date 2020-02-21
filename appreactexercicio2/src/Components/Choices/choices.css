@@ -1,0 +1,22 @@
+.choice {
+    display: inline-block;
+    height: 400px;
+    width: 200px;
+}
+
+.choice > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.yellow {
+    background-color: yellow;
+}
+.blue {
+    background-color: blue;
+}
+.pink {
+    background-color: pink;
+}

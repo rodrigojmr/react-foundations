@@ -1,0 +1,17 @@
+.bloco {
+    background-color: green;
+    text-align: center;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    color: white;
+    font-size: 2rem;
+}
+
+.bloco > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
