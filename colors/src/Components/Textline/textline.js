@@ -5,7 +5,8 @@ class Textline extends React.Component {
     render() {
         return (
             <div>
-                <h2>A cor é : {this.props.cor}</h2>
+                <h1>Qual é a cor?</h1>
+                <h2>A cor é: {this.props.cor}</h2>
             </div>
         );
     }

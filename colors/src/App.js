@@ -9,12 +9,12 @@ class App extends React.Component {
     return (
         <div className="container">
           <Text texto="Cor"></Text>
-          <p className="which-color-text">Qual é a cor?</p>
+          {/* <p className="which-color-text">Qual é a cor?</p> */}
           <Clickable></Clickable>
           <div className="flex">
-            <Choice classCor="yellow"></Choice>
-            <Choice classCor="blue"></Choice>
-            <Choice classCor="pink"></Choice>
+            <Choice classCor="yellow" texto="Amarela"></Choice>
+            <Choice classCor="blue" texto="azul"></Choice>
+            <Choice classCor="pink" texto="rosa"></Choice>
           </div>
       </div>
     );

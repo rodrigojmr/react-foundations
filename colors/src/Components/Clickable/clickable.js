@@ -20,9 +20,8 @@ class Clickable extends React.Component {
 
     render() {
         return  (
-            <div className="container">
+            <div className="which-color-text">
                 <Textline cor={this.cor}></Textline>
-                <p>Teste</p>
                 <input id="bt" type="button" onClick={this.handleClickEvent}></input>;
             </div>
         )
