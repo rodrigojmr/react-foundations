@@ -8,6 +8,10 @@ class Clickable extends React.Component {
     constructor(Props) {
         super(Props);
         this.handleClickEvent = this.handleClickEvent.bind(this);
+        this.state = {
+            nome: 'valor',
+            maturidade: 'inicial'
+        }
     }
 
     cor = "red";
@@ -21,6 +25,7 @@ class Clickable extends React.Component {
     render() {
         return  (
             <div className="which-color-text">
+                <p>{this.state.valor}</p>
                 <Textline cor={this.cor}></Textline>
                 <input id="bt" type="button" onClick={this.handleClickEvent}></input>;
             </div>

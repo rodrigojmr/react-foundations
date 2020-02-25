@@ -9,7 +9,6 @@ class App extends React.Component {
     return (
         <div className="container">
           <Text texto="Cor"></Text>
-          {/* <p className="which-color-text">Qual é a cor?</p> */}
           <Clickable></Clickable>
           <div className="flex">
             <Choice classCor="yellow" texto="Amarela"></Choice>
