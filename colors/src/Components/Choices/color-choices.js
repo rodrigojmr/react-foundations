@@ -1,14 +1,20 @@
 import React from 'react';
 import './choices.scss';
 
-class Choice extends React.Component {
+class ColorButton extends React.Component {
     render() {
         return (
-            <div className={"choice" + ' ' + this.props.classCor}>
+            <div className="colorButtonContainer">
+                <input id={"bt" + this.props.color} onClick={this.props.callbackEvent} type="button" value={this.props.color}></input>
+                
+            {/* <div className={"choice" + ' ' + this.props.classCor}>
                 <p>{this.props.texto}</p>
+            </div> */}
             </div>
+
+
         );
     }
 }
 
-export default Choice;
+export default ColorButton;

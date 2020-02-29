@@ -3,22 +3,34 @@ import './App.css';
 import Text from './Components/Text/Text';
 import Choice from './Components/Choices/color-choices'
 import Clickable from './Components/Clickable/clickable';
+import ColorChanger from './Components/ColorChange/colorchange';
 
 class App extends React.Component {
   render(){
     return (
-        <div className="container">
-          <Text texto="Cor"></Text>
-          <Clickable></Clickable>
-          <div className="flex">
-            <Choice classCor="yellow" texto="Amarela"></Choice>
-            <Choice classCor="blue" texto="azul"></Choice>
-            <Choice classCor="pink" texto="rosa"></Choice>
-          </div>
+      <div className="app">
+        <ColorChanger initial="Teste"></ColorChanger>
       </div>
     );
   }
 }
+
+
+// class App extends React.Component {
+//   render(){
+//     return (
+//         <div className="container">
+//           <Text texto="Cor"></Text>
+//           <Clickable></Clickable>
+//           <div className="flex">
+//             <Choice classCor="yellow" texto="Amarela"></Choice>
+//             <Choice classCor="blue" texto="azul"></Choice>
+//             <Choice classCor="pink" texto="rosa"></Choice>
+//           </div>
+//       </div>
+//     );
+//   }
+// }
 
 
 // class App extends React.Component {

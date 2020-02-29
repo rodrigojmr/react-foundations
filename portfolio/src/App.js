@@ -1,31 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import LeftNavigation from './Components/Left Navigation/leftnavigation';
+import Content from './Components/Content/content';
+import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
 import './App.css';
-import HelloWorld from "./Components/HelloWorld/HelloWorld"
 
-// class App extends React.Component {
-//   render(){
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <HelloWorld desc="2"></HelloWorld>
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <p>
-//             Edit <code>src/App.js</code> and save to reload.
-//           </p>
-//           <a
-//             className="App-link"
-//             href="https://reactjs.org"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Learn React
-//           </a>
-//         </header>
-//       </div>
-//     );
-//   }
-// }
-
+function App() {
+    return(
+        <div className="App">
+            <Router>
+            <LeftNavigation></LeftNavigation>
+            <Content></Content>
+            </Router>
+        </div>
+    )
+}   
 
 export default App;

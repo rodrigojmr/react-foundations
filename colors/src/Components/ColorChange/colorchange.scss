@@ -1,0 +1,44 @@
+.color-square {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    margin: 0 auto;
+    line-height: 200px;
+    &--red {
+        background-color: red;
+    }
+    &--black {
+        background-color: black;
+    }
+    &--yellow {
+        background-color: red;
+    }
+}
+#colorButtons {
+    margin-top: 1rem;
+}
+
+.colorButtonContainer {
+    display: inline-block;
+}
+
+#btred {
+    background-color: red;
+    color: white;
+    padding: 1rem;
+    border: none;
+    margin: 0 1rem;
+}
+#btwhite {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border: none;
+}
+#btblack {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border: none;
+
+}
