@@ -36,9 +36,8 @@ class ColorChanger extends Component{
                     <ColorButton color="red" callbackEvent={this.updateRed}></ColorButton>
                     <ColorButton color="black" callbackEvent={this.updateBlack}></ColorButton>
                 </div>
-                
-                {this.rainbowColors.map(
-                    color => (
+
+                {this.rainbowColors.map(color => (
                         <p>{color}</p>
                     )                
                 )}

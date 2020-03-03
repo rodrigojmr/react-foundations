@@ -6,3 +6,11 @@
     width: 360px;
     background-color: red;
 }
+
+.btn {
+    &--navigation {
+        padding: 1rem 2rem;
+        color: #CC6733;
+        border: 1px solid #CC6733;
+    }
+}

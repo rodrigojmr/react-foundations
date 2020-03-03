@@ -6,14 +6,41 @@ import Clickable from './Components/Clickable/clickable';
 import ColorChanger from './Components/ColorChange/colorchange';
 
 class App extends React.Component {
+  constructor(Props) {
+    super(Props);
+    this.state = {
+      images: []
+    }
+  }
+  componentDidMount() {
+    let API = 'http://jsonplaceholder.typicode.com/photos';
+    fetch(API)
+    .then(res => res.json())
+    .then((data) => {
+      this.setState({ images: data })
+    })
+    .catch(console.log)
+  }
+
   render(){
     return (
-      <div className="app">
-        <ColorChanger initial="Teste"></ColorChanger>
-      </div>
-    );
-  }
-}
+    <div>
+      {this.state.images.map(image => (
+        <img src={image.url}></img>
+      ))};
+  </div>
+  )
+}}
+
+// class App extends React.Component {
+//   render(){
+//     return (
+//       <div className="app">
+//         <ColorChanger initial="Teste"></ColorChanger>
+//       </div>
+//     );
+//   }
+// }
 
 
 // class App extends React.Component {

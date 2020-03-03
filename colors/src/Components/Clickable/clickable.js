@@ -16,10 +16,8 @@ class Clickable extends React.Component {
 
     cor = "red";
 
-    handleClickEvent(){
-        alert(this.cor);
-        this.cor = "yellow";
-        alert(this.cor);
+    handleClickEvent(corsinha){
+        alert(corsinha);
     }
 
     render() {
@@ -27,7 +25,7 @@ class Clickable extends React.Component {
             <div className="which-color-text">
                 <p>{this.state.valor}</p>
                 <Textline cor={this.cor}></Textline>
-                <input id="bt" type="button" onClick={this.handleClickEvent}></input>;
+                <input id="bt" type="button" onClick={() => this.handleClickEvent("red")}></input>;
             </div>
         )
     }

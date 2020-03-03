@@ -1,0 +1,9 @@
+.gallery {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat( auto-fill, minmax( 200px, 1fr ) ); /* [2] Make columns adjust according to the available viewport */
+    grid-auto-rows: 250px; /* [3] Set the height for implicitly-created row track */
+}
+.item {
+    background-color: yellow;
+}
